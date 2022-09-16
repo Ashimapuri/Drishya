@@ -1,0 +1,12 @@
+#table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right:auto;
+}
+#button1,#button2{
+    text-align: center;
+}
+#text-center{
+    text-align: center;
+}
