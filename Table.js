@@ -1,29 +1,29 @@
-var table= document.getElementById("table"),sumVal=0;
-let Result=0;
+var table= document.getElementById("table");
+var sum=0;
+// var Result=0;
 for(var i=1; i<table.rows.length; i++){
-    sumVal=sumVal + parseInt(table.rows[i].innerHTML);
+    sum=sum + parseInt(table.rows[i].cells[0].innerHTML);
 }
-document.getElementById("val").innerHTML= sumVal;
-console.log(sumVal);
+document.getElementById("val").innerHTML= sum;
+console.log(sum);
 
 for(var j=1; i<table.columns.length; i++){
-    sumVal=sumVal + parseInt(table.columns[j].innerHTML);
+    sum=sum + parseInt(table.columns[j].cells[0].innerHTML);
 }
-document.getElementById("val").innerHTML= sumVal;
-console.log(sumVal);
+document.getElementById("val").innerHTML= sum;
+console.log(sum);
 
-// function Insert(){
-//     document.getElementById("n1").Value;
-// }
+
 
 function handleAdd(){
     var val = document.getElementById("val").innerHTML;
     document.getElementById("n1").Value = val;
     console.log(val);
     Result+=sumVal;
-    console.log("sumVal");
+    console.log("sum");
 }
 
 function handleDel(){
-    console.log("sumVal");
+    sumVal=document.getElementsByTagName("td");
+    console.log("del");
 }
